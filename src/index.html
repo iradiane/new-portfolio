@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my portfolio using tailwind css</title>
+  <link href="./output.css" rel="stylesheet">
+  <!-- box icon -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body class="bg-background">
+  <!-- -------header -->
+  <header class="fixed top-0 right-0 left-0 md:py-1 transition-all duration-300">
+    <nav class="max-w-7xl max-aut bg-gray-800 md:bg-transparent p-5">
+      <div class="flex items-center justify-between">
+        <a href="/" class="text-white font-bold text-lg flex items-center gap-3"><img src="../phots/Logo.svg">portfolio</a>
+        <!-- -----nav only for large device-width -->
+        <div class="hidden md:flex space-x-10">
+          <a href="#home" class="text-primary hover:text-gray-300">Home</a>
+          <a href="#projects"  class="text-white hover:text-gray-300">Projects</a>
+          <a href="#resume"  class="text-white hover:text-gray-300">Resume</a>
+        </div>
+        <!-- ------menu btn only display on mobile -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-white text-2xl">
+            <i class='bx bx-menu'></i>
+          </button>
+        </div>
+        <!-- ----- mobile menu-- -->
+        <div id="mobile-menu" class="hidden md:hidden">
+          <a href="#home" class="text-primary hover:text-gray-300 block py-2 hover:bg-gray-700">Home</a>
+          <a href="#projects"  class="text-white hover:text-gray-300 block py-2 hover:bg-gray-700">Projects</a>
+          <a href="#resume"  class="text-white hover:text-gray-300 block py-2 hover:bg-gray-700">Resume</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ------script tag -->
+  <script src="../src/app.js"></script>
+</body>
+</html>
